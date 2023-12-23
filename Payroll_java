@@ -1,0 +1,33 @@
+
+-----Innovixion Tech-task-1-----
+
+
+import java.util.*;
+import java.text.DecimalFormat;
+public class Payroll
+{
+    private static DecimalFormat df=new DecimalFormat("0.00");
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.print("\n\n");
+	System.out.print("\t\tPayroll Program in Java");
+	System.out.print("\n\n");
+	System.out.print("\t\tGive Employee Name:");
+	String name=sc.nextLine();
+	System.out.print("\n\n");
+	System.out.print("\t\tHow many hours did you work this week?:");
+	int hours=sc.nextInt();
+	System.out.print("\n\n");
+	System.out.print("\t\tWhat is your hourly pay rate?:");
+	double hpay=sc.nextDouble();
+	System.out.print("\n\n");
+	System.out.print("\t\t------Display Records-------");
+	System.out.print("\n\n");
+	System.out.print("\t\tEmployee Name:"+name);
+	System.out.print("\n\n");
+    System.out.print("\t\tgross pay$:"+df.format(hours*hpay));
+	System.out.print("\n\n");
+
+
+	}
+}
